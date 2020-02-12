@@ -10,25 +10,21 @@ body {
   cursor: move;
 }
 
-/* width */
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   height: 30px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
   background: #0ff;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: #f0f;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #00f;
-}
+} */
 
 section {
   display: none;
