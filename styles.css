@@ -1,0 +1,136 @@
+@font-face {
+  font-family: 'Main';
+  src: url('./assets/font.ttf') format('truetype');
+}
+
+body {
+  font-family: 'Main';
+  margin: 0;
+  padding: 0;
+  cursor: move;
+}
+
+/* width */
+::-webkit-scrollbar {
+  height: 30px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #0ff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #f0f;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #00f;
+}
+
+section {
+  display: none;
+}
+
+header {
+  position: fixed;
+  width: 60%;
+  left: 10%;
+  pointer-events: none;
+}
+
+h1 {
+  display: none;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 5rem;
+  letter-spacing: 1.5px;
+}
+
+img {
+  /* position: relative; */
+  margin-right: 150px;
+}
+
+p {
+  margin: 10px;
+}
+
+@media only screen and (max-width: 992px) {
+  h2 {
+    font-size: 4rem;
+  }
+}
+
+h2:nth-child(2) {
+  color: #fff;
+}
+
+main {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.horiz {
+  justify-content: flex-start;
+  transform: rotate(90deg);
+  flex-shrink: 0;
+  /* position: absolute; */
+  right: -10px;
+  height: 200px;
+  /* border: 1px solid red; */
+  padding-left: 100px;
+}
+
+.vert {
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 767px) {
+  body {
+    cursor: default;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  section {
+    display: block;
+  }
+
+  header {
+    pointer-events: all;
+  }
+
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  ol {
+    padding: 15px;
+  }
+
+  li {
+    margin: 10px 0;
+    padding: 0;
+  }
+
+  li::after {
+    content: '\27F6';
+  }
+
+  li:nth-child(2)::after {
+    content: '\27F6\27F6';
+  }
+
+  li:nth-child(3)::after {
+    content: '\27F6\27F6\27F6';
+  }
+}
