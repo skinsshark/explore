@@ -11,8 +11,8 @@ body {
   background: url('./assets/bg.png');
 }
 
-/* ::-webkit-scrollbar {
-  height: 30px;
+::-webkit-scrollbar {
+  width: 0;
 }
 
 ::-webkit-scrollbar-track {
@@ -22,10 +22,6 @@ body {
 ::-webkit-scrollbar-thumb {
   background: #f0f;
 }
-
-::-webkit-scrollbar-thumb:hover {
-  background: #00f;
-} */
 
 section {
   display: none;
@@ -49,19 +45,18 @@ h2 {
 }
 
 img {
-  /* position: relative; */
-  margin-right: 150px;
+  border-bottom: 5px dotted navy;
 }
 
 p {
   margin: 10px;
 }
 
-@media only screen and (max-width: 992px) {
+/* @media only screen and (max-width: 992px) {
   h2 {
     font-size: 4rem;
   }
-}
+} */
 
 h2:nth-child(2) {
   color: #fff;
@@ -88,7 +83,7 @@ main {
   flex-direction: column;
 }
 
-@media only screen and (max-width: 767px) {
+/* @media only screen and (max-width: 767px) {
   body {
     cursor: default;
   }
@@ -130,4 +125,4 @@ main {
   li:nth-child(3)::after {
     content: '\27F6\27F6\27F6';
   }
-}
+} */
