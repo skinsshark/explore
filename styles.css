@@ -29,7 +29,7 @@ section {
 
 header {
   position: fixed;
-  width: 70%;
+  width: 60%;
   left: 10%;
   pointer-events: none;
 }
@@ -54,13 +54,7 @@ p {
 
 @media only screen and (max-width: 992px) {
   h2 {
-    font-size: 4.5rem;
-  }
-}
-
-@media only screen and (max-width: 800px) {
-  h2 {
-    font-size: 3rem;
+    font-size: 4rem;
   }
 }
 
@@ -89,7 +83,7 @@ main {
   flex-direction: column;
 }
 
-/* @media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   body {
     cursor: default;
   }
@@ -131,4 +125,4 @@ main {
   li:nth-child(3)::after {
     content: '\27F6\27F6\27F6';
   }
-} */
+}
